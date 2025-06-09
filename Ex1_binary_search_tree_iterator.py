@@ -1,6 +1,8 @@
 # Time Complexity:
-#   - next(): Amortized O(1) time
-#   - hasNext(): O(1) time
+#   - next(): Amortized O(1) time — Each node is pushed and popped from the stack only once across the entire traversal,
+#     so although individual next() calls may take O(h) time in the worst case (when traversing down to the leftmost node),
+#     the total time over all next() calls is O(n), giving O(1) amortized time per call.
+#   - hasNext(): O(1) time — Simply checks whether the stack is non-empty.
 # Space Complexity: O(h), where h is the height of the tree (stack stores at most h nodes)
 # Did this code successfully run on Leetcode: YES
 # Any problem you faced while coding this: No
